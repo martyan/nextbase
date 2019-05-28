@@ -1,6 +1,6 @@
 ### <a href="https://nextbase-e74ee.firebaseapp.com/">Demo</a>
 
-Boilerplate for React developers who wants to quick start a project in NextJS and Firebase
+#### Boilerplate for React developers who wants to quick start a project in NextJS and Firebase
 
 Build and deploy this boilerplate and start developing your project without need to build the whole infrastructure from scratch
 
