@@ -9,14 +9,12 @@ Build and deploy this boilerplate and start developing your project without need
 Great for front-end developers, shipped with authentication and basic profile management out of the box
 
 
-<br /><br />
 ## Features
 - **Server Side Rendering** and **code splitting** out of the box
 - **Authentication** - email/password, social sign-in providers, basic profile management
 - **To-do list example**
 
 
-<br /><br />
 ## Stack
 - **Firebase** - Build apps fast, without managing infrastructure (database, storage, hosting, server)
 - **NextJS** - A minimalistic framework for universal server-rendered React applications
@@ -27,7 +25,6 @@ Keeping it minimal so you can choose your tech stack
 Thanks to Firebase and NextJS you can scale up as your product grows
 
 
-<br /><br />
 ## Firebase set-up
  1. Create a Firebase project using the [Firebase Console](https://console.firebase.google.com).
  2. Add **web** app to project (don't set up hosting).
@@ -48,7 +45,6 @@ Thanks to Firebase and NextJS you can scale up as your product grows
  7. In auth section set up email/password sign-in method (for more methods see below)
 
 
-<br /><br />
 ## In terminal
  1. Clone or fork this repository.
  1. Install deps `npm install`.
@@ -61,7 +57,6 @@ Thanks to Firebase and NextJS you can scale up as your product grows
 ### You're all set - now you can focus on actual coding of your project
 
 
-<br /><br />
 ## Social platform sign-in providers
 You can add support for social platform sign-in providers easily.
 
@@ -70,8 +65,7 @@ Set it in **Firebase Console** -> **Authentication** -> **Sign-in method**
 - [Set up Google sign-in method](https://firebase.google.com/docs/auth/web/google-signin)
 - [Set up Facebook sign-in method](https://firebase.google.com/docs/auth/web/facebook-login)
 
-
-<!--<br /><br />-->
+-->
 <!--## Sending emails via Gmail-->
 <!--To be able to send emails with your Gmail account-->
 <!--- enable access to **[Less Secure Apps](https://myaccount.google.com/lesssecureapps)** and **[Display Unlock Captcha](https://accounts.google.com/b/0/DisplayUnlockCaptcha)**-->
@@ -82,7 +76,6 @@ Set it in **Firebase Console** -> **Authentication** -> **Sign-in method**
 <!--```-->
 
 
-<br /><br />
 ## Security rules
 Guard your data with rules that define who has access to it and how it is structured
 
@@ -110,7 +103,6 @@ service firebase.storage {
 ```
 
 
-<br /><br />
 ## More read
 - [Firebase](https://firebase.google.com/docs/web/setup)
 - [NextJS](https://nextjs.org/learn/basics/getting-started)
