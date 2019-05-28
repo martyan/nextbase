@@ -1,0 +1,57 @@
+{
+    "name": "nextbase",
+    "version": "0.1.0",
+    "description": "Minimalistic serverless boilerplate based on NextJS and Firebase",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next \"src/app/\"",
+        "preserve": "npm run build-all && npm run copy-deps && npm run install-deps",
+        "serve": "cross-env NODE_ENV=production firebase serve",
+        "predeploy": "npm run build-all && npm run copy-deps",
+        "deploy": "firebase deploy",
+        "clean": "rimraf \"dist/functions/**\" && rimraf \"dist/public\"",
+        "build-all": "npm run build-public && npm run build-funcs && npm run build-next",
+        "build-public": "cpx \"src/public/**/*.*\" \"dist/public\" -C",
+        "build-funcs": "babel \"src/functions\" --out-dir \"dist/functions\"",
+        "build-next": "next build \"src/app/\"",
+        "copy-deps": "cpx \"*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
+        "install-deps": "cd \"dist/functions\" && npm i"
+    },
+    "engines": {
+        "node": "8"
+    },
+    "author": "Martin Juzl",
+    "license": "ISC",
+    "dependencies": {
+        "@zeit/next-sass": "^1.0.1",
+        "dotenv": "^8.0.0",
+        "firebase": "^6.0.4",
+        "firebase-admin": "^8.0.0",
+        "firebase-functions": "^2.3.1",
+        "next": "^8.1.0",
+        "next-images": "^1.1.1",
+        "next-redux-wrapper": "^3.0.0-alpha.2",
+        "node-sass": "^4.12.0",
+        "nodemailer": "^6.2.1",
+        "normalize.css": "^8.0.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-flip-move": "^3.0.3",
+        "react-ga": "^2.5.7",
+        "react-redux": "^7.0.3",
+        "react-responsive-modal": "^4.0.1",
+        "recompose": "^0.30.0",
+        "redux": "^4.0.1",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "autoprefixer": "^9.5.0",
+        "cpx": "^1.5.0",
+        "cross-env": "^5.2.0",
+        "firebase-tools": "^6.10.0",
+        "rimraf": "^2.6.0"
+    }
+}

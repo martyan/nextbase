@@ -1,0 +1,54 @@
+@import './common/variables';
+
+footer {
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+
+    .inner {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .github {
+
+        cursor: pointer;
+
+        a {
+
+            display: flex;
+            align-items: center;
+            color: #666;
+            text-decoration: none;
+
+            &:hover {
+
+                i {
+                    transform: scale(1.25);
+                }
+
+            }
+
+            i {
+
+                margin-left: 10px;
+                font-size: 1.6em;
+                transition: .3s ease;
+
+                @media (min-width: $tablet) {
+                    font-size: 2em;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+

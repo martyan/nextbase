@@ -1,0 +1,57 @@
+@import '../components/common/global';
+@import '../components/common/variables';
+
+.user {
+
+    min-height: 100vh;
+
+    .inner {
+
+        padding: 15px;
+        max-width: 420px;
+        min-height: 70vh;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo {
+
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background-size: cover;
+            overflow: hidden;
+
+            @media (min-width: $tablet) {
+                width: 150px;
+                height: 150px;
+            }
+
+        }
+
+        .email {
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .name {
+            margin-bottom: 50px;
+            color: #444;
+        }
+
+        button {
+            margin-bottom: 15px;
+        }
+
+    }
+
+}

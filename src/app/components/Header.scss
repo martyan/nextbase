@@ -1,0 +1,65 @@
+@import './common/variables';
+
+header {
+
+    max-width: 1280px;
+    margin: 0 auto 50px;
+    padding: 15px 20px;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+
+        font-family: 'Nanum Pen Script', cursive;
+        margin-bottom: 5px;
+        user-select: none;
+
+        @media (min-width: $tablet) {
+            margin-bottom: 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #444;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+    }
+
+    .auth {
+
+        font-size: .95em;
+
+        a {
+
+            color: #444;
+            cursor: pointer;
+            opacity: .7;
+            text-decoration: none;
+            transition: .1s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+
+        .spacer {
+            margin: 0 10px;
+            color: #444;
+            font-weight: 300;
+            opacity: .5;
+        }
+
+    }
+
+}

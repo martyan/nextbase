@@ -1,0 +1,55 @@
+@import '../common/variables';
+
+.sign-in {
+
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background: white;
+
+    form {
+
+        padding: 30px 15px;
+
+        @media (min-width: $tablet) {
+            padding: 30px;
+        }
+
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.25em;
+            font-weight: 500;
+            margin: 10px 0 30px;
+            text-align: center;
+            color: #666;
+        }
+
+        .server-error {
+            margin: 20px 0 0;
+            color: $red;
+            font-size: .95em;
+        }
+
+        .forgotten {
+
+            margin: 30px 0 15px;
+            text-align: center;
+
+            a {
+
+                color: #666;
+                font-size: .95em;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,66 @@
+@import '../common/variables';
+
+.verify-email {
+
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background: white;
+
+    @media (min-width: $tablet) {
+        padding: 30px;
+    }
+
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.25em;
+        font-weight: 500;
+        margin: 10px 0 30px;
+        text-align: center;
+        color: #666;
+    }
+
+    p {
+
+        color: #666;
+
+        b {
+            color: $green;
+            font-weight: 600;
+        }
+
+        a {
+
+            color: $green;
+            cursor: pointer;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+    .sign-out {
+
+        margin-top: 50px;
+        text-align: center;
+
+        a {
+
+            color: #666;
+            font-size: .95em;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,34 @@
+@import '../common/variables';
+
+.sign-in-social {
+
+    padding: 10px 0 20px;
+    text-align: center;
+    color: #888;
+    background: #eaebf0;
+
+    button {
+
+        margin: 5px;
+        border: 0;
+        background: transparent;
+        font-size: 2em;
+        transition: .2s ease;
+        color: #999;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &.fb {
+            color: #3b5998;
+        }
+
+        &.google {
+            color: #ea4335;
+        }
+
+    }
+
+}

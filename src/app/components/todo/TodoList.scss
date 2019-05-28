@@ -1,0 +1,75 @@
+@import '../common/variables';
+
+.todo-list {
+
+    max-width: 420px;
+    margin: 0 auto;
+
+    .hide-completed {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .95em;
+        color: #999;
+        padding: 15px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .todo {
+
+        display: flex;
+        min-height: 50px;
+        align-items: center;
+        margin: 10px;
+        padding: 10px 10px 10px 20px;
+        background: white;
+        border-radius: 20px;
+
+        .text {
+            flex: 1;
+            color: #666;
+            padding: 5px;
+        }
+
+        input.text {
+            border: none;
+            border-radius: 2px;
+            background: #f5f5f5;
+        }
+
+        @media (min-width: $desktop) {
+
+            &:hover {
+
+                .delete {
+                    opacity: 1;
+                }
+
+            }
+
+        }
+
+        .delete {
+
+            padding: 4px 10px;
+            background: transparent;
+            border: 0;
+            font-size: 1.2em;
+            color: #bbb;
+            cursor: pointer;
+            transition: all 250ms cubic-bezier(.4,.0,.23,1);
+
+            @media (min-width: $desktop) {
+                opacity: 0;
+            }
+
+            &:hover {
+                color: #999;
+            }
+
+        }
+
+    }
+
+}
