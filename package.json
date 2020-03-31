@@ -28,7 +28,7 @@
         "firebase": "^6.0.4",
         "firebase-admin": "^8.0.0",
         "firebase-functions": "^2.3.1",
-        "next": "^8.1.0",
+        "next": "^9.3.2",
         "next-images": "^1.1.1",
         "next-redux-wrapper": "^3.0.0-alpha.2",
         "node-sass": "^4.12.0",
