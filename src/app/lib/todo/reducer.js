@@ -1,9 +1,14 @@
+import { HYDRATE } from 'next-redux-wrapper'
+
 export const initialState = {
     todos: []
 }
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case HYDRATE:
+            return {...state, ...action.payload.todo}
+
         case 'GET_TODOS_SUCCESS':
             return {...state, todos: action.payload}
 

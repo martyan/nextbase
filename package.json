@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "description": "Minimalistic serverless boilerplate based on NextJS and Firebase",
     "main": "index.js",
+    "browserslist": [
+        "last 2 versions"
+    ],
     "scripts": {
         "dev": "next \"src/app/\"",
         "preserve": "npm run build-all && npm run copy-deps && npm run install-deps",
@@ -28,10 +31,10 @@
         "firebase": "^6.0.4",
         "firebase-admin": "^8.0.0",
         "firebase-functions": "^2.3.1",
-        "next": "^8.1.0",
+        "next": "^9.4.0",
         "next-images": "^1.1.1",
-        "next-redux-wrapper": "^3.0.0-alpha.2",
-        "node-sass": "^4.12.0",
+        "next-redux-wrapper": "^6.0.0",
+        "node-sass": "^4.14.1",
         "nodemailer": "^6.2.1",
         "normalize.css": "^8.0.1",
         "prop-types": "^15.7.2",
@@ -39,10 +42,10 @@
         "react-dom": "^16.8.6",
         "react-flip-move": "^3.0.3",
         "react-ga": "^2.5.7",
-        "react-redux": "^7.0.3",
+        "react-redux": "^7.2.0",
         "react-responsive-modal": "^4.0.1",
         "recompose": "^0.30.0",
-        "redux": "^4.0.1",
+        "redux": "^4.0.5",
         "redux-devtools-extension": "^2.13.8",
         "redux-thunk": "^2.3.0"
     },
