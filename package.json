@@ -1,6 +1,6 @@
 {
     "name": "nextbase",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Minimalistic serverless boilerplate based on NextJS and Firebase",
     "main": "index.js",
     "browserslist": [
