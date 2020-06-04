@@ -47,6 +47,8 @@ Thanks to Firebase and NextJS you can scale up as your product grows
  5. Create Firebase database in test mode
  6. Create Firebase storage
  7. In auth section set up email/password sign-in method (for more methods see below)
+ 8. Allow [unauthenticated function invocation](https://cloud.google.com/functions/docs/securing/managing-access-iam#allowing_unauthenticated_function_invocation)
+ 
 
 
 <br /><br />
