@@ -21,7 +21,7 @@
         "install-deps": "cd \"dist/functions\" && npm i"
     },
     "engines": {
-        "node": "8"
+        "node": "12"
     },
     "author": "Martin Juzl",
     "license": "ISC",
