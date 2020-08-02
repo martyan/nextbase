@@ -3,8 +3,8 @@ import auth, { initialState as initialStateAuth } from './auth/reducer'
 import todo, { initialState as initialStateTodo } from './todo/reducer'
 
 export const initialState = {
-    ...initialStateAuth,
-    ...initialStateTodo
+    auth: initialStateAuth,
+    todo: initialStateTodo
 }
 
 export default combineReducers({
