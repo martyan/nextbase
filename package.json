@@ -35,7 +35,7 @@
         "next-images": "^1.1.1",
         "next-redux-wrapper": "^6.0.0",
         "node-sass": "^4.14.1",
-        "nodemailer": "^6.2.1",
+        "nodemailer": "^6.4.16",
         "normalize.css": "^8.0.1",
         "prop-types": "^15.7.2",
         "react": "^16.8.6",
